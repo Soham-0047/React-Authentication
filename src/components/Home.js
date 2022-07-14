@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 
 import {useNavigate} from "react-router-dom"
+import Button from "@mui/material/Button"
+
 
 const Home = () => {
 
@@ -23,8 +25,9 @@ const Home = () => {
 
     },[])
   return (
-    <div><h1>Home Page</h1>
-    <button onClick={handleLogout}>Log Out</button></div>
+    <div style={{textAlign:"center"}}><h1>Home Page</h1>
+    <Button variant="contained"onClick={handleLogout}>Log Out</Button>
+    </div>
   )
 }
 
